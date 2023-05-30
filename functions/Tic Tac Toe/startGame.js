@@ -227,6 +227,7 @@ function checkWinner() {
 
 function edit()  {
   if (checkWinner() === "failed") {
+    if (currentGame.spotsAvailable.length == 0) return draw();
     if (currentGame.lobby.currentMembers === 2) {
    currentGame.rotation.reverse()
   let mention;
@@ -255,7 +256,7 @@ function edit()  {
     <:TicTacToe_X:717504662412066909> - **${player1}**
     <:TicTacToe_O:717504662705668157> - **${player2}**
 
-     **${player2}**'s ${lang.misc.turn} <a:Loading:699476392651391076> ${lang.minigames.ttt.pleaseWait}
+     **${player2}**'s ${lang.misc.turn} <a:Loading:712097176313921548> ${lang.minigames.ttt.pleaseWait}
      ${lang.minigames.ttt.toPlay}
 
                      ------------------
@@ -268,6 +269,7 @@ function edit()  {
 
 setTimeout(function() {
   const available = currentGame.spotsAvailable
+  if (available.length == 0) return draw();
   const spotChosen = available[Math.floor(Math.random() * available.length)];
   spot[spotChosen.toLowerCase()] = "<:TicTacToe_O:717504662705668157>"
   currentGame.spotsAvailable = arrayRemove(currentGame.spotsAvailable, spotChosen)
