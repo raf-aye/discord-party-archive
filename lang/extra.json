@@ -1,0 +1,46 @@
+{
+    "minigames": {
+        "general": {
+            "multipleDMDisabled": "Game Cancelled, as one or more people does not have DM's enabled."
+        },
+        "hangman": {
+            "note2": "Note: You have to say each letter individually, you cannot say the whole word!"
+        },
+        "matchup": {
+            "instructions2": "Match up two of the same item!"
+        },
+        "quiz": {
+            "points": "Points"
+        },
+        "rps": {
+            "tie": "It was a tie!",
+            "wins": "Wins"
+        },
+        "uno": {
+            "colors": {
+                "draw": "Draw Card"
+            },
+            "description": "Play the same color or numbered card until you run out!",
+            "usage": "uno [2 | 3 | 4]",
+            "cards": "**[USER]**'s cards:",
+            "lobbyMsg": "Play your cards right, and win bragging rights!",
+            "playing": "Playing",
+            "skipped": "You have been skipped by **[USER]**!",
+            "winner": "Empty (Winner!)"
+        }
+    },
+    "commands": {
+        "setlang": {
+            "description": "Sets the language for the bot in the server",
+            "usage": "setlang",
+            "game": "There's a game going on in this server, please wait for when that one finishes, or cancel the game",
+            "select": "Select a language to change to",
+            "translationBy": "Translation By",
+            "success": "Sucessfully changed the language to English"
+        },
+        "stop": {
+            "provideNum": "You must provide the number of the game!\nConfused? Do [PREFIX]listgames",
+            "invalidNum": "That is not a valid game number!"
+        }
+    }
+}
